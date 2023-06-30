@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color:  hsl(0, 0%, 94%);
+}
+.container{
+    /* position */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    background-color: white;
+
+    width: 50%;
+    height: 650px;
+
+    border-radius: 5% 5% 30%;
+
+}
+
+
+.date>p{
+    padding: 4%;
+}
+
+.day,.month,.year{
+    font-size: 0.9rem;
+    letter-spacing: 4px;
+    color: hsl(0, 1%, 44%);
+    width: 20%;
+    padding: 3% 3% 0%;
+}
+/* error */
+.error{
+    font-size: 0.7rem;
+    color: hsl(0, 100%, 67%);
+    width: 100%;
+    padding: 3%;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-style: italic;
+}
+.input{
+    display: flex;
+    padding: 3% 5% 0%;
+    font-weight: 400;
+}
+.input input{
+    width: 95px;
+    height: 65px;
+    font-size: 1.8rem;
+    border: 0.1 px  hsl(0, 0%, 86%) ;
+    border-radius: 7%;
+    padding: 0% 15%;
+}
+.show input{
+    border-color: hsl(0, 100%, 67%);
+}
+::placeholder{
+    color: hsl(0, 0%, 56%);
+}
+
+.start{
+    margin: 5% 0% 2% 8% ;
+    width: 75%;
+    height: 0.5%;
+}
+svg{
+    border-radius: 50%;
+    background-color: hsl(259, 100%, 65%);
+    width: 12%;
+    height: 12%;
+}
+
+.end{
+    display: none;
+}
+
+.button{
+    display: flex;
+}
+
+.result{
+    padding:  5% 8% 5%;
+    font-size: 6rem;
+    font-weight:800;
+    font-style: italic;
+    line-height: 100%;
+}
+
+.result span{
+    color: hsl(259, 100%, 65%);
+}
+
+@media only screen and (max-width: 1400px) {
+    .container{
+        width: 65%;
+        height: 600px;
+    }
+    .result{
+        padding: 1% 8% 1%;
+        font-size: 4.8rem;
+    }
+    
+}
+
+@media only screen and (max-width: 1200px) {
+    .container{
+        width: 70%;
+        height: 500px;
+    }
+    .result{
+        padding: 1% 8% 1%;
+        font-size: 4.5rem;
+    }
+    .date{
+        font-size: 0.8rem;
+        width: 19%;
+        padding: 3% 1.5% 1%;
+    }
+    .input input{
+        width: 75px;
+        height: 55px;
+        font-size: 1.2rem;
+    }
+    .button svg{
+        width: 9%;
+    }
+    .error{
+        font-size: 0.6rem;
+    }
+    
+}
+
+@media only screen and (max-width: 900px) {
+    .container{
+        width: 78%;
+        height: 450px;
+    }
+    .result{
+        padding: 1% 8% 1%;
+        font-size: 4.3rem;
+    }
+    .date{
+        font-size: 0.6rem;
+        width: 23%;
+        padding: 3% 3% 1%;
+    }
+    .input input{
+        width: 65px;
+        height: 50px;
+        font-size: 1rem;
+    }
+    .button svg{
+        width: 11%;
+    }
+    .error{
+        font-size: 0.6rem;
+    }
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .container{
+        width: 85%;
+        height: 400px;
+    }
+    .result{
+        padding: 1% 8% 1%;
+        font-size: 3.9rem;
+    }
+    .date{
+        font-size: 0.5rem;
+        width: 40%;
+        padding: 3% 3% 1%;
+    }
+   
+    .input input{
+        width: 60px;
+        height: 50px;
+        font-size: 1rem;
+    }
+    .start{
+        margin: 4% 0% 2% 8% ;
+        width: 70%;
+    }
+    .start{
+        margin: 6% 0% 2% 8% ;
+        width: 50%;
+    }
+    .end{
+        display: block;
+        width: 50%;
+        margin: 6% 8% 2% 0% ;
+    }
+    .button svg{
+        width: 17%;
+    }
+    .error{
+        font-size: 0.5rem;
+
+    }
+    
+  }
+@media only screen and (max-width: 510px) {
+
+    .date{
+        padding: 5%;
+    }
+    .result{
+        font-size: 3.3rem;
+    }
+  }
+  @media only screen and (max-width: 440px) {
+    .container{
+        width: 90%;
+        height: 350px;
+    }
+    .date{
+        font-size: 0.5rem;
+        width: 40%;
+        padding: 4%;
+    }
+   
+    .input input{
+        width: 45px;
+        height: 35px;
+        font-size: 0.8rem;
+    }
+    .result{
+        padding: 6%;
+        font-size: 3rem;
+    }
+
+    
+  }
+  @media only screen and (max-width: 360px) {
+   
+    .container{
+        height: 300px;
+    }
+    .result{
+        font-size: 2.5rem;
+    }
+  }
+
+@media only screen and (max-width: 380px) {
+   
+    
+  }
+
+
+
+.attribution{
+    position:absolute;
+    bottom: 1%;
+    left: 50%;
+    transform: translate(-50%);
+}
